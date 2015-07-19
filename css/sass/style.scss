@@ -1,0 +1,76 @@
+body {
+	width:1440px;
+	height:720px;
+    background-color: #b5b5b5; }
+p{
+	font-family:"Microsoft YaHei";}
+#container{
+	margin:-20px auto 0 auto;}
+#nav {
+	float:left;
+	width:250px;
+	height:720px;
+	background-color:#424242;}
+#img{
+	position:relative;
+	top:50px;
+	text-align:center;
+	border-radius:90px;}
+#content {
+	float:left;
+	width:1190px;
+	height:720px;}
+#name{	
+	height:50px;
+	margin-top:70px;	
+	text-align:center;
+}
+#personalimformation,#stdlist,#departmentlist,#managementlevel{
+	height:50px;
+	text-align:center;
+	cursor:pointer;}
+
+.navs p{	
+	position:relative;
+	top:15px;
+	color:white;
+}
+#nav #personalimformation:hover{
+	background-color:grey;}
+#nav #stdlist:hover{
+	background-color:grey;}
+#nav #departmentlist:hover{
+	background-color:grey;}
+#nav #managementlevel:hover{
+	background-color:grey;}
+#head{
+	position:relative;
+	z-index:1;
+	height:100px;
+	margin-top:-20px;
+	background-color:#2497f1;
+	box-shadow:2px 2px 2px 2px grey;
+	}
+#head span{
+	position:relative;
+	top:50px;
+	left:100px;
+	font-size:25px;
+	color:white;}
+#detail{
+	width:1140px;
+	height:620px;
+	margin-left:20px;
+	background-color:white;}
+#contactway{
+	float:left;
+	margin-left:100px;}
+#pimformation{
+	float:left;
+	margin-left:250px;}
+#schoolimformation{
+	float:left;
+	margin-left:250px;}
+.details{
+	color:#8d8d8d;}
+/*# sourceMappingURL=style.css.map */

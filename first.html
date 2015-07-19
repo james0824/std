@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/first.css">
+<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/change.js"></script>
+<title>人员</title>
+</head>
+
+<body>
+	<div id="change">
+    	<div id="bg" class="bg">
+        </div>
+        <div class="head">
+            <span><p>呵呵哒</p></span>
+        </div>
+        <form name="form1" id="form1">
+    	<div class="detail">
+            	<div class="contactway">
+                    <span class="details">
+                        联系方式
+                    </span>
+                	<div class="phonenumber">
+                    	<span class="summary">
+                            手机
+                        </span>
+                    	<input type="text" class="details"/>
+                    </div>
+                    <div class="shortnumber">
+                    	<span class="summary">
+                            短号
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="email">
+                    	<span class="summary">
+                            邮箱
+                        </span>
+                    	<input type="text" class="details"/>
+                    </div>
+                    <div class="qqnumber">
+                    	<span class="summary">
+                            QQ
+                        </span>
+                    	<input type="text" class="details"/>
+                    </div>
+                    <div class="blog">
+                    	<span class="summary">
+                            微博
+                        </span>
+                    	<input type="text" class="details"/>
+                    </div>
+                </div>
+                <div class="pimformation">
+                    <span class="details">
+                        个人信息
+                    </span>
+                    	<div class="birthday">
+                        	<span class="summary">
+                            	生日
+                        	</span>
+                        	<input type="text" class="details"/>
+                        </div>
+                        <div class="householdregister">
+                        	<span class="summary">
+                            	户籍
+                        	</span>
+                        	<input type="text" class="details"/>
+                        </div>
+                        <div class="socialidentity">
+                        	<span class="summary">
+                            	政治面貌
+                        	</span>
+                        	<input type="text" class="details"/>
+                        </div>
+                </div>
+                <div class="schoolimformation">
+                    <span class="details">
+                        在校信息
+                    </span>
+                    <div class="school">
+                    	<span class="summary">
+                            学校
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="major">
+                    	<span class="summary">
+                            专业
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="classes">
+                    	<span class="summary">
+                            班级
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="dormitory">
+                    	<span class="summary">
+                            宿舍楼
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="dormitorynumber">
+                    	<span class="summary">
+                            宿舍号
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                </div>
+                <div class="alter" onClick="submitform();">
+                	确定
+                </div>
+                <span class="close">
+                	关闭
+                </span>
+            </div>
+            </form>
+    </div>
+	<div id="container">
+    	<div id="nav">
+        	<div id="img">
+            	<img src="img/1.jpg">
+            </div>
+        	<div id="name">
+            	<span class="navs">
+                    <p>呵呵哒</p>
+                </span>
+            </div>
+            <ul>
+            	<li id="personalimformation" class="navs">
+                   个人信息
+                </li>
+            	<li id="stdlist" class="navs" onClick="window.location.href='second.html'">
+                    人员列表
+                </li>
+            	<li id="departmentlist" class="navs">
+                    部门列表
+                </li>
+            	<li id="managementlevel" class="navs">
+                    管理层级
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+        	<div class="head">
+            	<span><p>个人信息</p></span>
+            </div>
+            <div class="detail">
+            	<div class="contactway">
+                    <span class="details">
+                        联系方式
+                    </span>
+                	<div class="phonenumber">
+                    	<span class="summary">
+                            手机
+                        </span>
+                    	<span class="details">
+                            123456789
+                        </span>
+                    </div>
+                    <div class="shortnumber">
+                    	<span class="summary">
+                            短号
+                        </span>
+                    	<span class="details">
+                            123456789
+                        </span>
+                    </div>
+                    <div class="email">
+                    	<span class="summary">
+                            邮箱
+                        </span>
+                    	<span class="details">
+                            123456789@qq.com
+                        </span>
+                    </div>
+                    <div class="qqnumber">
+                    	<span class="summary">
+                            QQ
+                        </span>
+                    	<span class="details">
+                            123456789
+                        </span>
+                    </div>
+                    <div class="blog">
+                    	<span class="summary">
+                            微博
+                        </span>
+                    	<span class="details">
+                            呵呵哒
+                        </span>
+                    </div>
+                </div>
+                <div class="pimformation">
+                    <span class="details">
+                        个人信息
+                    </span>
+                    	<div class="birthday">
+                        	<span class="summary">
+                            	生日
+                        	</span>
+                        	<span class="details">
+                                9999.9.9
+                            </span>
+                        </div>
+                        <div class="householdregister">
+                        	<span class="summary">
+                            	户籍
+                        	</span>
+                        	<span class="details">
+                                Earth
+                            </span>
+                        </div>
+                        <div class="socialidentity">
+                        	<span class="summary">
+                            	政治面貌
+                        	</span>
+                        	<span class="details">
+                                少先队员
+                            </span>
+                        </div>
+                </div>
+                <div class="schoolimformation">
+                    <span class="details">
+                        在校信息
+                    </span>
+                    <div class="school">
+                    	<span class="summary">
+                            学校
+                        </span>
+                        <span class="details">
+                            华南理工幼儿园附属大学
+                        </span>
+                    </div>
+                    <div class="major">
+                    	<span class="summary">
+                            专业
+                        </span>
+                        <span class="details">
+                            X专业
+                        </span>
+                    </div>
+                    <div class="classes">
+                    	<span class="summary">
+                            班级
+                        </span>
+                        <span class="details">
+                            X班级
+                        </span>
+                    </div>
+                    <div class="dormitory">
+                    	<span class="summary">
+                            宿舍楼
+                        </span>
+                        <span class="details">
+                            X宿舍楼
+                        </span>
+                    </div>
+                    <div class="dormitorynumber">
+                    	<span class="summary">
+                            宿舍号
+                        </span>
+                        <span class="details">
+                            XXX
+                        </span>
+                    </div>
+                </div>
+                <div class="alter">
+                	修改
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

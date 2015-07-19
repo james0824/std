@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/second.css">
+<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<script type="text/javascript" src="js/add.js"></script>
+<script type="text/javascript" src="js/sjson.js"></script>
+<title>人员</title>
+</head>
+
+<body>
+	<div id="change">
+    	<div id="bg" class="bg">
+        </div>
+        <div class="head">  
+        </div>
+        <form name="form1" id="form1">
+    		<div class="detail">
+            	<div class="addperson">
+                    <span class="details">
+                        个人信息
+                    </span>
+                	<div class="addname">
+                    	<span class="summary">
+                            姓名
+                        </span>
+                    	<input type="text" class="details"/>
+                    </div>
+                    <div class="addnumber">
+                    	<span class="summary">
+                            学号
+                        </span>
+                        <input type="text" class="details"/>
+                    </div>
+                    <div class="addmanagement">
+                    	<span class="summary">
+                            管理层级
+                        </span>
+                    	<select class="details">
+                        	<option>
+                            常委
+                            </option>
+                            <option>
+                            部长
+                            </option>
+                            <option>
+                            主管
+                            </option>
+                            <option>
+                            干事
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="alter" onClick="submitform();">
+                	确定
+                </div>
+                <span class="close">
+                	关闭
+                </span>
+            </div>
+            </form>
+    </div>
+	<div id="container">
+    	<div id="nav">
+        	<div id="img">
+            	<img src="img/1.jpg">
+            </div>
+        	<div id="name">
+            	<span class="navs">
+                    <p>呵呵哒</p>
+                </span>
+            </div>
+            <ul>
+            	<li id="personalimformation" class="navs" onClick="window.location.href='first.html'">
+                   个人信息
+                </li>
+            	<li id="stdlist" class="navs">
+                    人员列表
+                </li>
+            	<li id="departmentlist" class="navs">
+                    部门列表
+                </li>
+            	<li id="managementlevel" class="navs">
+                    管理层级
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+        	<div class="head">
+            	<span><p>人员列表</p></span>
+            </div>
+            <div class="detail">
+            	<div class="search">
+                	<div class="selectI">
+                    	<p><img class="arrowI" src="img/arrow.png" ></p>
+                    </div>
+                    <div class="selectD">
+                    	<p><img class="arrowD" src="img/arrow.png"></p>
+                    </div>
+                    <div class="selectC">
+                    	<p><img class="arrowC" src="img/arrow.png"></p>
+                    </div>
+                    <input class="inputN"/>
+                    <div class="btn" onClick="subjson();">
+                    	搜索
+                    </div>
+                    <div class="add">
+                    	增加新的人员
+                    </div>
+                </div>
+                <div class="table">
+                	<table cellpadding="8" class="tbhead">
+                    	<tr>
+                        	<td class="name">姓名</td>
+                            <td class="level">级别</td>
+                            <td class="department">部门</td>
+                            <td class="college">学院</td>
+                            <td class="phone">手机</td>
+                            <td class="e-mail">邮箱</td>
+                        </tr>
+                    </table>
+                    <table cellpadding="8" class="tbdetail">
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                        <tr>
+                        	<td>呵呵哒</td>
+                            <td>部长</td>
+                            <td>技术部</td>
+                            <td>计算机科学与工程</td>
+                            <td>12345678910</td>
+                            <td>12345678910@qq.com</td>
+                            <td class="changes">修改</td>
+                            <td class="delete">删除</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="warn">
+                	<p></p>
+                </div>
+                <div class="page">
+                	<span class="last"><<上一页</span>
+                    <span class="show">第<span>3</span>/10页   每页显示<span>8</span>条   共<span>1000</span>条</span>
+                    <span class="next">下一页>> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
